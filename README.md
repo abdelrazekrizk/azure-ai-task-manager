@@ -48,7 +48,7 @@ Before you begin, ensure you have the following installed:
 1. Clone the repository:
 
 ```bash
-   git clone https://github.com/abdelrazekrizk/azure-ai-task-manager?tab=readme-ov-file#prerequisites.git
+   git clone https://github.com/abdelrazekrizk/azure-ai-task-manager.git
    cd azure-ai-task-manager/src/TaskManager
 ```
 2. Install the required NuGet packages:
