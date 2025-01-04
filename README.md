@@ -58,7 +58,7 @@ dotnet add package Octokit --version 13.0.1
 dotnet add package Azure.AI.TextAnalytics --version 5.3.0
 ```
 
-Configuration
+### Configuration
 
 
 Open the Program.cs file and update the AzureNLPService instantiation with your Azure credentials:
@@ -72,7 +72,7 @@ builder.Services.AddSingleton<AzureNLPService>(sp =>
 ```
 
 
-Running the Application
+### Running the Application
 
 
 Build the application:
@@ -91,7 +91,7 @@ dotnet run
 
 3. Access the API at https://localhost:5001.
 
-API Endpoints
+### API Endpoints
 
 
 Get All Tasks
@@ -143,7 +143,7 @@ Response:
 ```
 
 
-Testing the API
+### Testing the API
 
 You can test the API endpoints using tools like Postman or cURL.
 
@@ -153,8 +153,8 @@ Add a New Task:
 Send a POST request to https://localhost:5001/api/task with the request body as shown above.
 Contributing
 
-Contributions are welcome! Please follow these steps:
-
+ Contributions are welcome! Please follow these steps:
+- Contributions are welcome! Please follow these steps:
 Fork the repository.
 Create a new branch (git checkout -b feature/YourFeature).
 Make your changes.
@@ -162,6 +162,6 @@ Commit your changes (git commit -m 'Add some feature').
 Push to the branch (git push origin feature/YourFeature).
 Open a pull request.
 
-- License
+### License
 
 This project is licensed under the GNU GENERAL PUBLIC LICENSE - see the LICENSE file for details.
