@@ -11,11 +11,10 @@ namespace TaskManager.Controllers
         private readonly TaskService taskService;
         private readonly AzureNLPService azureNLPService;
 
-        public TaskController()
+        public TaskController(TaskService taskService, AzureNLPService azureNLPService)
         {
-            // Replace with your Azure credentials
-            azureNLPService = new AzureNLPService("YOUR_AZURE_ENDPOINT", "YOUR_AZURE_API_KEY");
-            taskService = new TaskService();
+            this.taskService = taskService;
+            this.azureNLPService = azureNLPService;
         }
 
         [HttpGet]
@@ -32,4 +31,4 @@ namespace TaskManager.Controllers
             return Ok(new { Task = task, Sentiment = sentiment });
         }
     }
-}
+}  
